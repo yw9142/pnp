@@ -1,175 +1,202 @@
-.main-container{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  margin-top: 21px;
-}
-.main-container .main-wrap{
-  width:553px;
-
-}
-.main-container .main-wrap .sel-lang-wrap .lang-select
-{
-  width: 96px;
-  height: 30px;
-  color: var(--font-color);
-  border: solid 1px var(--border-gray-color);
-}
-.main-container .main-wrap .logo-wrap{
-  padding-top:55px;
-}
-.main-container .main-wrap .logo-wrap img
-{
-  width: 231px;
-  height: 44px;
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
 }
 
-.main-container .main-wrap header .sel-lang-wrap{
-  display:flex;
-  justify-content:flex-end;
-}
-
-.main-container .main-wrap header .logo-wrap{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.login-input-section-wrap{
-  border: solid 1px var(--border-gray-color);
-  margin-top: 77px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-container .main-wrap {
+    width: 553px;
 
 }
 
-.login-input-wrap{
-  width: 465px;
-  height :48px;
-  border: solid 1px var(	--border-gray-color );
-  background: white;
+.main-container .main-wrap .sel-lang-wrap .lang-select {
+    width: 96px;
+    height: 30px;
+    color: var(--font-color);
+    border: solid 1px var(--border-gray-color);
 }
-.password-wrap{
-  margin-top: 13px;
+
+.main-container .main-wrap .logo-wrap {
+    padding-top: 55px;
 }
-.login-input-wrap input{
-  border: none;
-  width:430px;
-  margin-top: 10px;
-  font-size: 14px;
-  margin-left: 10px;
-  height:30px;
+
+.main-container .main-wrap .logo-wrap img {
+    width: 231px;
+    height: 44px;
 }
+
+.main-container .main-wrap header .sel-lang-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container .main-wrap header .logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input-section-wrap {
+    border: solid 1px var(--border-gray-color);
+    margin-top: 77px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-input-wrap {
+    width: 465px;
+    height: 60px;
+    background: white;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 2px 6px rgba(68, 68, 68, 0.08));
+    border-radius: 6px 6px 0 0;
+}
+
+.password-wrap {
+    border-top: solid 1px var(--border-gray-color);
+    border-radius: 0 0 6px 6px;
+
+}
+
+.login-input-wrap input {
+    border: none;
+    width: 430px;
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 14px;
+    height: 30px;
+;
+
+}
+
 .login-button-wrap {
-  padding-top: 13px;
-}
-.login-button-wrap button{
-  width: 465px;
-  height :48px;
-  font-size: 18px;
-  background: var(--naver-green-color);
-  color: white;
-  border: solid 1px var(--naver-green-border-color);
-}
-.login-stay-sign-in{
-  width: 465px;
-  height: 52px;
-
-  display: flex;
-  font-size: 15px;
-  color: #4e4e4e;
-  align-items: center;
-  justify-content: space-between;
+    padding-top: 13px;
 }
 
-.login-stay-sign-in i{
-  font-size: 25px;
-  color: #9ba1a3;
-}
-.login-stay-sign-in span{
-  padding-left: 5px;
-  line-height: 25px;
-}
-
-.Easy-sgin-in-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Easy-sgin-in-wrap h2{
-  font-size: 20px;
-}
-.Easy-sgin-in-wrap .sign-button-list
-{
-  padding-top:25px;
-  list-style: none;
-  width: 465px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Easy-sgin-in-wrap .sign-button-list li{
-  padding-bottom: 10px;
-}
-.Easy-sgin-in-wrap .sign-button-list li button{
-  width: 465px;
-  height: 56px;
-  border: solid 1px var(--border-gray-color);
-  text-align: left;
-  background: white;
-}
-.Easy-sgin-in-wrap .sign-button-list li button i{
-  padding-left: 15px;
-  font-size: 20px;
-}
-.fa-qrcode
-{
-  color:var(--naver-green-color);
-}
-.fa-line{
-  color:var(--naver-green-color);
-}
-.fa-facebook-square
-{
-  color:#4064ac;
-}
-.Easy-sgin-in-wrap .sign-button-list li button span{
-  padding-left: 20px;
-  font-size: 18px;
-}
-.Easy-sgin-in-wrap .forget-msg{
-  color:var(--font-color);
-  font-size: 14px;
-  padding-top: 28px;
-
-}
-footer{
-
-  padding-top: 10px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-
-}
-.copyright-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 15px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.login-button-wrap button {
+    width: 465px;
+    height: 48px;
+    font-size: 18px;
+    background: var(--naver-green-color);
+    color: white;
+    border: solid 1px var(--naver-green-border-color);
 }
 
-footer .copyright-wrap span img{
-  width: 59px;
-  height: 11px;
+.login-stay-sign-in {
+    width: 465px;
+    height: 52px;
+
+    display: flex;
+    font-size: 15px;
+    color: #4e4e4e;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.login-stay-sign-in i {
+    font-size: 25px;
+    color: #9ba1a3;
+}
+
+.login-stay-sign-in span {
+    padding-left: 5px;
+    line-height: 25px;
+}
+
+.Easy-sgin-in-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Easy-sgin-in-wrap h2 {
+    font-size: 20px;
+}
+
+.Easy-sgin-in-wrap .sign-button-list {
+    padding-top: 25px;
+    list-style: none;
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Easy-sgin-in-wrap .sign-button-list li {
+    padding-bottom: 10px;
+}
+
+.Easy-sgin-in-wrap .sign-button-list li button {
+    width: 465px;
+    height: 56px;
+    border: solid 1px var(--border-gray-color);
+    text-align: left;
+    background: white;
+}
+
+.Easy-sgin-in-wrap .sign-button-list li button i {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.fa-qrcode {
+    color: var(--naver-green-color);
+}
+
+.fa-line {
+    color: var(--naver-green-color);
+}
+
+.fa-facebook-square {
+    color: #4064ac;
+}
+
+.Easy-sgin-in-wrap .sign-button-list li button span {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.Easy-sgin-in-wrap .forget-msg {
+    color: var(--font-color);
+    font-size: 14px;
+    padding-top: 28px;
 
 }
-footer .copyright-wrap span{
-  font-size: 13px;
-  line-height: 15px;
+
+footer {
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.copyright-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer .copyright-wrap span img {
+    width: 59px;
+    height: 11px;
+
+}
+
+footer .copyright-wrap span {
+    font-size: 13px;
+    line-height: 15px;
 
 }

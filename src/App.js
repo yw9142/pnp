@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {ReactComponent as Logo} from "assets/NaverLogoGreen.svg";
 import "./App.css"
 import Switch from "react-switch";
-
+import {ReactComponent as CheckCircle} from "assets/CheckCircle.svg";
 
 const AdsBox = styled.div`
   height: 176px;
@@ -43,7 +43,7 @@ function App() {
                         <input placeholder="비밀번호" type="password"/>
                     </div>
                     <div className="login-stay-sign-in">
-                        <li className="far fa-check-circle">로그인 상태 유지</li>
+                        <span><CheckCircle/>로그인 상태 유지</span>
                         {/*<span>로그인 상태 유지</span>*/}
                         <NewSwitch/>
                     </div>
