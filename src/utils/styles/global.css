@@ -11,6 +11,7 @@ html * {
 }
 
 body {
+    background:var(--body-background-color);
     text-decoration: none;
     overflow-y: scroll;
     display: flex;
@@ -52,5 +53,9 @@ ul {
 }
 
 :root {
-    --sky-blue: #6bc2ff;
+    --body-background-color: #f5f6f7;
+    --font-color: #4e4e4e;
+    --border-gray-color : #dadada;
+    --naver-green-color: #04c75a;
+    --naver-green-border-color: #06b350;
 }

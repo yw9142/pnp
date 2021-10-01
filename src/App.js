@@ -1,61 +1,88 @@
 import styled from "styled-components";
-import { ReactComponent as Logo } from "assets/NaverLogoGreen.svg";
-import Button from "./components/Button";
+import {ReactComponent as Logo} from "assets/NaverLogoGreen.svg";
+import "./App.css"
+import Switch from "react-switch";
 
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 107px 0 20px 0;
-`;
 
-const HeaderContainer = styled.header`
-  width: 743px;
-  height: 163px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-`;
+const AdsBox = styled.div`
+  height: 176px;
+  width: 551px;
+  margin-top: 44px;
 
-const Select = styled.select`
-  font-size: 12px;
-  background-color: white;
-  border-color: #cccccc;
-  color: #333333;
-  width: 95px;
-  height: 30px;
-  padding: 4px 10px 6px 8px;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgba(68, 68, 68, 0.04);
+  border-radius: 6px;
+`
 
-  option {
-    background: white;
-    display: flex;
-    padding: 0 2px 1px 2px;
-  }
-`;
+const NewSwitch = styled(Switch)`
+
+`
 
 function App() {
-  return (
-    <Container>
-      <HeaderContainer className="header" role="banner">
-        <div className="header_inner">
-          <a href="https://www.naver.com" className="logo">
-            <Logo />
-          </a>
 
-          <Select>
-            <option value="ko_KR">한국어</option>
-            <option value="ko_KR">English</option>
-            <option value="ko_KR">中文(简体)</option>
-            <option value="ko_KR">中文(台灣)</option>
-          </Select>
+    return (
+        <div className="main-container">
+            <div className="main-wrap">
+                <header>
+                    <div className="sel-lang-wrap">
+                        <select className="lang-select">
+                            <option>한국어</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div className="logo-wrap">
+                        <Logo/>
+                    </div>
+                </header>
+                <section className="login-input-section-wrap">
+                    <div className="login-input-wrap">
+                        <input placeholder="아이디" type="text"/>
+                    </div>
+                    <div className="login-input-wrap password-wrap">
+                        <input placeholder="비밀번호" type="password"/>
+                    </div>
+                    <div className="login-stay-sign-in">
+                        <li className="far fa-check-circle">로그인 상태 유지</li>
+                        {/*<span>로그인 상태 유지</span>*/}
+                        <NewSwitch/>
+                    </div>
+                    <div className="login-button-wrap">
+                        <button>Sign in</button>
+                    </div>
+                </section>
+                <section className="Easy-sgin-in-wrap">
+                    <p className="forget-msg">비밀번호 찾기 | 아이디 찾기 | 회원가입</p>
+                    {/*<ul className="sign-button-list">*/}
+                    {/*    <li>*/}
+                    {/*        <button>*/}
+                    {/*            <li className="fas fa-qrcode"/>*/}
+                    {/*            <span>Sign in with QR code</span></button>*/}
+                    {/*    </li>*/}
+                    {/*    <li>*/}
+                    {/*        <button>*/}
+                    {/*            <li className="fab fa-facebook-square"/>*/}
+                    {/*            <span>Facebook</span></button>*/}
+                    {/*    </li>*/}
+                    {/*    <li>*/}
+                    {/*        <button>*/}
+                    {/*            <li className="fab fa-line"/>*/}
+                    {/*            <span>line</span></button>*/}
+                    {/*    </li>*/}
+                    {/*</ul>*/}
+
+                    <AdsBox><img src="assets/AdsBox.png" alt="ads"/></AdsBox>
+
+                    <p className="forget-msg">이용약관 | 개인정보처리방침 | 책임의 한계와 법적고지 | 회원정보 고객센터</p>
+                </section>
+                <footer>
+                    <div className="copyright-wrap">
+                        <span><Logo style={{width: "70px", height: "15px"}}/>  Copyright © NAVER Corp. All Rights Reserved.</span>
+                    </div>
+                </footer>
+            </div>
         </div>
-
-        <Button>로그인</Button>
-      </HeaderContainer>
-    </Container>
-  );
+    );
 }
 
 export default App;
